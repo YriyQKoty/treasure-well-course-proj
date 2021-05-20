@@ -60,7 +60,7 @@ namespace Singletons
 				Settings.SetActive( false );
 				Pause.SetActive( false );
 				Level.SetActive(false);
-
+		
 				scenes = new SceneManager [ sceneLevels.Length ];
 				InitMenuType();
 			} else {
@@ -102,7 +102,7 @@ namespace Singletons
 
 			if ( objMenu != null ) {
 				objMenu.SetActive( true );
-				objMenu.GetComponent<Menu>().Init_Menu();
+				//objMenu.GetComponent<Menu>().Init_Menu();
 			}
 		}
 
@@ -149,11 +149,13 @@ namespace Singletons
 		/// <param name="i"></param>
 		public void LoadLevel ( int i )
 		{
-			if ( sceneLevels.Length > i ) {
-				sceneLoadingOperation = SceneManager.LoadSceneAsync( sceneLevels [ i ]);
-				sceneLoadingOperation.allowSceneActivation = true;
-				Helper.SceneLevel = i;
-			}
+			SceneManager.LoadSceneAsync(i);
+			
+			// if ( sceneLevels.Length > i ) {
+			// 	sceneLoadingOperation = SceneManager.LoadSceneAsync( sceneLevels [ i ]);
+			// 	sceneLoadingOperation.allowSceneActivation = true;
+			// 	Helper.SceneLevel = i;
+			// }
 		}
 
 	}

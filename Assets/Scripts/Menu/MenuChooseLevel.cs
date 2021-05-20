@@ -114,14 +114,14 @@ public class MenuChooseLevel : Menu
 				y -= 200f;
 			}
 
-			levelBottom_new.GetComponent<Button>().onClick.AddListener( ( ) => ChoiceLevel( levelBottom_new ) );
+			//levelBottom_new.GetComponent<Button>().onClick.AddListener( ( ) => ChoiceLevel( levelBottom_new ) );
 		}
 	}
 
 	/// <summary>
 	/// Користувач обрав рівень
 	/// </summary>
-	private void ChoiceLevel ( GameObject sender )
+	public void ChoiceLevel ( )
 	{
 		//Debug.Log( sender.GetComponent<LevelButton>().level );
 		MenuController.Instance.LoadLevel( 1 );

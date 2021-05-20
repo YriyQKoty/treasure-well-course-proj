@@ -10,5 +10,7 @@ namespace Utilities
 	public static class Helper 
 	{
 		public static int SceneLevel = -1;
+
+		public static string IdBox = "IdBox";
 	}
 }

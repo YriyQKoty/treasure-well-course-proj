@@ -15,19 +15,6 @@ public class Menu : MonoBehaviour
 	/// </summary>
 	public Button button_exit_menu = null;
 
-	public void Init_Menu (){
-		if ( button_exit_menu != null ) {
-			button_exit_menu.onClick.AddListener( ( ) => Exit_Menu( ) );
-		}
-	}
-
-	/// <summary>
-	/// метод виходу з меню
-	/// </summary>
-	private void Exit_Menu ( )
-	{
-		Exit_Menu_Event();
-	}
 
 	/// <summary>
 	/// метод виходу з меню - додаткові сценарії

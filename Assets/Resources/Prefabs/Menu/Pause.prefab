@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &780498810222117539
 RectTransform:
   m_ObjectHideFlags: 0
@@ -233,7 +233,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button_exit_menu: {fileID: 780498809023256090}
   Main: {fileID: 780498810527012158}
-  Shield: {fileID: 0}
 --- !u!1 &780498810527012156
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,7 +251,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &780498810527012157
 RectTransform:
   m_ObjectHideFlags: 0
