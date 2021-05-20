@@ -49,7 +49,7 @@ namespace RopeLogic
         private float loadMass = 1f;
 
         //How fast we can add more/less rope
-        float winchSpeed = 3f;
+        float winchSpeed = 4.5f;
 
         //The joint we use to approximate the rope
         SpringJoint2D springJoint;

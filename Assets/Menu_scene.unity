@@ -262,8 +262,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041F\u0420\u041E\u0419\u0414\u0406\u0422\u042C \u0422\u0415\u0421\u0422
-    \n\u0410\u0411\u0418 \u041F\u0420\u041E\u0414\u041E\u0412\u0416\u0418\u0422\u0418"
+  m_Text: "\u041D\u0410\u0422\u0418\u0421\u041D\u0406\u0421\u0422\u042C \u041D\u0418\u0416\u0427\u0415
+    \u0410\u0411\u0418 \u041F\u0420\u041E\u0414\u041E\u0412\u0416\u0418\u0422\u0418"
 --- !u!222 &599473724
 CanvasRenderer:
   m_ObjectHideFlags: 0
