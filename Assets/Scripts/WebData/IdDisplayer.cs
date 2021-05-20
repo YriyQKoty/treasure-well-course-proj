@@ -1,9 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Singletons;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using Utilities;
 
 public class IdDisplayer : MonoBehaviour
 {
@@ -12,14 +8,15 @@ public class IdDisplayer : MonoBehaviour
 
     [SerializeField] private GameObject StartGameObject;
     [SerializeField] private GameObject FinishGameObject;
-    private void Awake()
-    {
-        IdBox.SetActive(true);
-    }
+    // private void Awake()
+    // {
+    //     IdBox.SetActive(true);
+    // }
 
     public void DeactivateBox()
     {
         IdBox.SetActive(false);
+        Application.OpenURL("");
         ActivateMainButtons();
     }
 
