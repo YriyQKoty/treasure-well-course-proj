@@ -123,7 +123,7 @@ public class MenuChooseLevel : Menu
 	/// </summary>
 	private void ChoiceLevel ( GameObject sender )
 	{
-		Debug.Log( sender.GetComponent<LevelButton>().level );
-		MenuController.Instance.LoadLevel( sender.GetComponent<LevelButton>().level );
+		//Debug.Log( sender.GetComponent<LevelButton>().level );
+		MenuController.Instance.LoadLevel( 1 );
 	}
 }

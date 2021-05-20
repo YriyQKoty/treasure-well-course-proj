@@ -29,8 +29,8 @@ public class MenuMain : Menu
         else
         {
             Level_button.onClick.AddListener(ChoiseLevel);
-            Exit_app_button.onClick.AddListener(Exit_app);
-            Settings_button.onClick.AddListener(Settings);
+            //Exit_app_button.onClick.AddListener(Exit_app);
+            //Settings_button.onClick.AddListener(Settings);
         }
     }
 
