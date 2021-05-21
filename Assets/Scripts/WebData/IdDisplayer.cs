@@ -12,7 +12,7 @@ public class IdDisplayer : MonoBehaviour
     [SerializeField] private Text _text;
 
     private string Code;
-    private readonly string Url = "https://192.168.0.101:5001/api";
+    private readonly string Url = "http://167.172.96.87/api";
 
     [SerializeField] private GameObject StartGameObject;
     [SerializeField] private GameObject FinishGameObject;
@@ -51,7 +51,7 @@ public class IdDisplayer : MonoBehaviour
 
     public void OpenWebPage()
     {
-        Application.OpenURL($"http://{Url}/game-results/{Code}");
+        Application.OpenURL($"{Url}/game-results/{Code}");
     }
 
     private void HideMainButtons(bool value)
