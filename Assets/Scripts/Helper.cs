@@ -11,6 +11,6 @@ namespace Utilities
 	{
 		public static int SceneLevel = -1;
 
-		public static string IdBox = "IdBox";
+		public static bool GameFinished = false;
 	}
 }

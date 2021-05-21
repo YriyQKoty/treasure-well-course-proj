@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Utilities;
 using WebClient;
 
 public class IdDisplayer : MonoBehaviour
@@ -14,13 +16,21 @@ public class IdDisplayer : MonoBehaviour
 
     [SerializeField] private GameObject StartGameObject;
     [SerializeField] private GameObject FinishGameObject;
-    public void SendRequest()
+    public void Update()
     {
-        StartCoroutine(WebRequest());
+        if (Helper.GameFinished && SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            Helper.GameFinished = false;
+            StartCoroutine(WebRequest());
+        }
+        
     }
 
    IEnumerator WebRequest()
-    {
+   {
+       HideMainButtons(true);
+       IdBox.SetActive(true);
+       
         using (UnityWebRequest www = UnityWebRequest.Post($"{Url}/complete-game",""))
         {
             yield return www.SendWebRequest();
@@ -35,9 +45,6 @@ public class IdDisplayer : MonoBehaviour
                _text.text = Code;
               Debug.Log(res.code);
             }
-            
-            HideMainButtons(true);
-            IdBox.SetActive(true);
         }
         
     }

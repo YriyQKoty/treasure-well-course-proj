@@ -26,6 +26,8 @@ namespace Singletons
 		}
 
 		public AsyncOperation sceneLoadingOperation;
+		
+		public GameObject IdDisplayer;
 
 		public static MenuType MENU_NAME = MenuType.None;
 		
@@ -149,8 +151,8 @@ namespace Singletons
 		/// <param name="i"></param>
 		public void LoadLevel ( int i )
 		{
-			SceneManager.LoadSceneAsync(i);
-			
+			SceneManager.LoadScene(i);
+
 			// if ( sceneLevels.Length > i ) {
 			// 	sceneLoadingOperation = SceneManager.LoadSceneAsync( sceneLevels [ i ]);
 			// 	sceneLoadingOperation.allowSceneActivation = true;

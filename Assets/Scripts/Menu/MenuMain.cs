@@ -87,6 +87,7 @@ public class MenuMain : Menu
     public void ExitApplication()
     {
         Application.Quit();
+        Debug.Log("4124");
     }
 
     /// <summary>
