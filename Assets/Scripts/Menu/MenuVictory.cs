@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ using UnityEngine.UI;
 public class MenuVictory : Menu
 {
 	public Button Main = null;
+	public IdDisplayer Displayer;
 
 	// Start is called before the first frame update
 	void Start()
@@ -26,6 +28,7 @@ public class MenuVictory : Menu
 		{
 			MenuController.Instance.LoadLevel(0);
 			BackMenu( MenuController.MenuType.Main, gameObject );
+			Displayer.SendRequest();
 		}
 		else
 		{
