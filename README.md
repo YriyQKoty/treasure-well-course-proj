@@ -1,4 +1,4 @@
-# treasure-well-course-proj
+# treasure well
 This is my pet Unity project and course proj for University. A lepricon collects a treasure located at a well bottom. You should avoid traps and lift treasure up! Proj was built for Android only
 
 
